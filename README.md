@@ -69,4 +69,4 @@ It looks like we are going to need to make two get requests in order to get all 
 Now let's hook it into our controller
 - In our controller.js file create a controller named GitHubController 
 - Pass in githubService in the callback along with $scope
-- 
+
