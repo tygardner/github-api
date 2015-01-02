@@ -1,6 +1,8 @@
 #Exploring the GitHub API
 
-Today we are going to create a tool that allows us to look up a github user via their username, and pull cool data from their account!
+Today we are going to create a tool that allows us to look up a github user via their username, and pull cool data from their account! 
+
+*Note, the basic github api only allows 60 requests an hour. Make sure you use them sparingly!*
 
 ## Basic Setup
 - Create the index.html file
@@ -95,6 +97,11 @@ We are going to first create an interface, to take in search requests and show t
 
 *Note, we know it's called {{user}} because our getUserData function sets $scope.user = res.data*
 
+Now, we should be getting some ugly looking JSON in our view when we search for a valid username. It looks ugly, but in the world of APIs it's beautiful data! 
+
+## Filling out the rest of our app
+
+Go through the GitHub API documentation and find other endpoints that you would want to hit in order to get deeper data sets. Also, take some time to build you the view of your app. Doing things like <h1>{{user.name}}</h1> will help you create a readable and user-friendly interface!
 
 
 
