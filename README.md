@@ -88,7 +88,7 @@ Now, $scope.searchText doesn't exist right now, so let's go ahead and create it!
 
 We are going to first create an interface, to take in search requests and show the results.
 
-- Create a form that has an input field and a button
+- In our index.html file create a form that has an input field and a button
 - In the input field make it's ng-model="searchText"
 - In the button make the ng-click run our $scope.getUserData function
 - Outside the form, let's show the userData by displaying it via angular's templating language: {{user}}
