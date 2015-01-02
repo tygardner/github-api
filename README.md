@@ -69,4 +69,12 @@ It looks like we are going to need to make two get requests in order to get all 
 Now let's hook it into our controller
 - In our controller.js file create a controller named GitHubController 
 - Pass in githubService in the callback along with $scope
+- Create a getUserData function on the scope object that calls the githubService's getUser function
+
+Since we are using $http in our service, we are going to get a promise back from our getUser function. Because of that, we need to use .then() so that we can get the data after it's been returned.
+
+- In the $scope.getUserData function append .then to the end of the githubService.getUser() function
+- Within the .then() pass in res and set $scope.user = res.data
+
+Now when $scope.getUserData() is ran, we will be making a valid request.
 
