@@ -76,5 +76,27 @@ Since we are using $http in our service, we are going to get a promise back from
 - In the $scope.getUserData function append .then to the end of the githubService.getUser() function
 - Within the .then() pass in res and set $scope.user = res.data
 
-Now when $scope.getUserData() is ran, we will be making a valid request.
+Now when $scope.getUserData() is ran, we will be making a valid get request! Well, almost. Our githubService.getUser() function needs to have something passed into it, so that it looks like this:
+
+``` javascript
+githubService.getUser($scope.searchText)
+```
+
+Now, $scope.searchText doesn't exist right now, so let's go ahead and create it!
+
+## Our View
+
+We are going to first create an interface, to take in search requests and show the results.
+
+- Create a form that has an input field and a button
+- In the input field make it's ng-model="searchText"
+- In the button make the ng-click run our $scope.getUserData function
+- Outside the form, let's show the userData by displaying it via angular's templating language: {{user}}
+
+*Note, we know it's called {{user}} because our getUserData function sets $scope.user = res.data*
+
+
+
+
+
 
