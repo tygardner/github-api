@@ -101,7 +101,7 @@ Now, we should be getting some ugly looking JSON in our view when we search for 
 
 ## Filling out the rest of our app
 
-Go through the GitHub API documentation and find other endpoints that you would want to hit in order to get deeper data sets. Also, take some time to build you the view of your app. Doing things like <h1>{{user.name}}</h1> will help you create a readable and user-friendly interface!
+Go through the GitHub API documentation and find other endpoints that you would want to hit in order to get deeper data sets. Also, take some time to build out the view of your app. Doing things like <h1>{{user.name}}</h1> will help you create a readable and user-friendly interface!
 
 
 
