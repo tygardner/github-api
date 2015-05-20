@@ -1,0 +1,19 @@
+html, body {
+	height: 100%;
+	width:  100%;
+	margin: 0;
+}
+
+body {
+	background: url('https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png') center center fixed;
+	background-repeat: no-repeat;
+	webkit-background-size: cover;
+    moz-background-size: cover;
+    o-background-size: cover;
+    background-size: cover;
+    margin-left: 45%;
+}
+
+/*#hello {
+	color: #fff;
+}*/
